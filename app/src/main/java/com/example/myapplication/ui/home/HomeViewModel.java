@@ -3,6 +3,7 @@ package com.example.myapplication.ui.home;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
+import com.example.myapplication.ui.Constant;
 
 public class HomeViewModel extends ViewModel {
 
@@ -10,7 +11,7 @@ public class HomeViewModel extends ViewModel {
 
     public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue(Constant.WELCOME_INFO);
     }
 
     public LiveData<String> getText() {
