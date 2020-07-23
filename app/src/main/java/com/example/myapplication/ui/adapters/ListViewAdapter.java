@@ -8,10 +8,12 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.example.myapplication.R;
 import com.example.myapplication.ui.bean.ListViewData;
-
 import java.util.ArrayList;
 import java.util.List;
 
+// itemView(布局,
+// adapter 一组 itemView，与操作itemView的方法
+// ListView 拿到 adapter，可能调用约定接口的 adapter 方法，展示一组数据
 public class ListViewAdapter extends RecyclerView.Adapter<ListViewAdapter.InnerHolder> {
     private List<ListViewData> mData = new ArrayList<>();
 
