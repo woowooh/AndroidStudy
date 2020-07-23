@@ -33,10 +33,9 @@ public class NotificationsFragment extends Fragment {
         // set layout manager
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(RecyclerView.VERTICAL);
-        // set adapters
         mlistView.setLayoutManager(linearLayoutManager);
+        // set adapters
         mlistViewAdapter = new ListViewAdapter();
-
         mlistView.setAdapter(mlistViewAdapter);
         getData();
 //        final TextView textView = root.findViewById(R.id.text_notifications);
