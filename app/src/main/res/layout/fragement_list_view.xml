@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="75dp">
+    <ImageView
+            android:id="@+id/album_cover"
+            android:layout_width="68dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="#00ffff"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/album_cover"
+            android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/list_view_title"
+                    android:layout_width="match_parent"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:text="这是一个测试的描述Title"
+                    android:textSize="18sp"
+                />
+
+            <TextView
+                    android:id="@+id/list_view_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="3dp"
+                    android:ellipsize="end"
+                    android:text="这是一个测试内容content"
+                    android:textSize="12sp"
+                    android:textColor="#ff848484"
+            />
+            </LinearLayout>
+
+</RelativeLayout>
