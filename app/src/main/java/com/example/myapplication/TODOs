@@ -1,0 +1,6 @@
+1. 登录页
+2. Navbar（头像，搜索框(搜索图标)， 游戏机图标， 未读信息。
+3. Bottom Navbar（图标 + 文字组合(放资源文件里，程序初始化时读取)
+4. BVcard(cover， description，BV categoryMain/category, 省略号更多，BV totaltime,
+ BV pay times, BV commentsCount)
+5. 下拉 fetch, 惰性加载资源。
